@@ -34,7 +34,7 @@ Matrix.prototype[Symbol.Iterator] = function () {
 
 //now we can loop over the matrix using for/of
 
-let matrix = new Matrix(2, 2, (x, y) => ` value ${x}, ${y}`);
-for (let { x, y, value } of matrix) {
+let matrix = new Matrix(2, 2, (x, y) => `value ${x}, ${y}`);
+for (let { x, y, value } of matrix.content) {
   console.log(x, y, value);
 }
