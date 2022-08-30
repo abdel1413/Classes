@@ -14,3 +14,6 @@ let getSize = {
 };
 
 console.log(getSize.size);
+//console.log(getSize.size)  =>79
+//console.log(getSize.size)  =>9
+//console.log(getSize.size)  =>32
