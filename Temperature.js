@@ -11,6 +11,12 @@ class Temperature {
     this.celsius = (value - 32) / 1.8;
   }
 
+  // NOTE; static methds are stored in the constructor
+  //So this Temperation class allows us to create temperature
+  //from fahrenheit to celsius using  instance variable.methd name
+  //ex in this case temp.fromFahrenheitToCelsius(value)
+  //converts fahrenheit to celsius
+
   static fromFahrenheitToCelsius(value) {
     return new Temperature((value - 32) / 1.8);
   }
